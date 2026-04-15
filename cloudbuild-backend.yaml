@@ -20,8 +20,6 @@ steps:
         "europe-west4",
         "--platform",
         "managed",
-        "--command",
-        "./launch",
         "--allow-unauthenticated",
         "--service-account",
         "wally-service-account@wally-registery.iam.gserviceaccount.com",
