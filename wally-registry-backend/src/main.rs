@@ -241,6 +241,9 @@ pub fn server(figment: Figment) -> rocket::Rocket<Build> {
     };
 
     println!("Cloning package index repository...");
+    println!("Using index URL: {}", config.index_url);
+    println!("Using Github Token: {:?}", config.github_token);
+
     let package_index = PackageIndex::new_temp(&config.index_url, config.github_token).unwrap();
 
     println!("Initializing search backend...");
