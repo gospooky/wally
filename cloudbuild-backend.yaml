@@ -23,6 +23,8 @@ steps:
         "--command",
         "./launch",
         "--allow-unauthenticated",
+        "--service-account",
+        "wally-service-account@wally-registery.iam.gserviceaccount.com",
       ]
 
 timeout: 900s
